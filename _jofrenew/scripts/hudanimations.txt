@@ -1,0 +1,19 @@
+event DamagedPlayer
+{
+	StopEvent 	DamageAccountStuff	0.0
+	RunEvent 	DamageAccountStuff      0.01 //lol
+	StopEvent 	HitMarker 	0.0
+	RunEvent 	HitMarker	0.01
+}
+event DamageAccountStuff
+{
+	Animate	DamageAccountLabel	Alpha	"255"	Linear 0.0 0.0		// tcHitmarker start
+	Animate	DamageAccountLabel	Alpha	"0"		Linear 0.0 1.25 	// tcHitmarker end
+
+	Animate	DamageAccountLabelShadow	Alpha	"255"	Linear 0.0 0.0		// tcHitmarker start
+	Animate	DamageAccountLabelShadow	Alpha	"0"		Linear 0.0 1.25 	// tcHitmarker end
+
+}
+event Hitmarker
+{	
+}

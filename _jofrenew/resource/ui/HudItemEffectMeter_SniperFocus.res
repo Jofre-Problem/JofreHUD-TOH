@@ -1,0 +1,14 @@
+#base "HudItemChargeBar.res"
+// Heatmaker
+
+"Resource/UI/HudItemEffectMeter_sniperfocus.res"
+{
+	"ItemMeterDescription" {
+		"fieldName"	"SniperFocus"
+	}
+	HudItemEffectMeter
+	{
+		"ypos"		"r140"
+		"ypos_minmode"	"r120"
+	}
+}

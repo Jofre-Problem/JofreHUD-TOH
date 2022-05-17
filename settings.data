@@ -1,0 +1,193 @@
+[BG:#FAFAFA]
+Window();
+[Border:0, FG:#1C1B1C]
+Banner("_4plug/4plug_images/managers/thumbnailBanner.png", "auto", "topleft");
+Banner("_4plug/4plug_images/managers/thumbnailBanner_v2.png", "auto", "topleft");
+
+[Name:Resolution, Default:Lower, FG:#7A5EF8, BG:#F4F4F5, Border:0]
+GlobalComboBox("Resolution", "Resolution")
+{
+	1920x1980
+	1366x768
+	1680x1050
+	Unavailable (Uses alternative)
+}
+
+[Name:Steam Summer Sale Border, Default:Lower, FG:#7A5EF8, BG:#33CCFF, Border:0]
+GlobalComboBox("Steam Summer Sale Border", "Steam Summer Sale Border")
+{
+	Disabled
+	Portal Blue
+	Portal Orange
+	Neon
+}
+
+[Name:ADDON Transparent, Default:Lower, FG:#7A5EF8, BG:#F4F4F5, Border:0]
+GlobalComboBox("ADDON Transparent", "ADDON Transparent")
+{
+	OFF
+	ON
+}
+
+[Name:EXPERIMENTAL Cart BG Glow, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL Cart BG Glow", "EXPERIMENTAL Cart BG Glow")
+{
+	OFF
+	ON (Needs Transparent V.)
+}
+[Border:0, FG:#1C1B1C]
+Banner("_4plug/4plug_images/glowbg.png", "auto", "topleft");
+[Name:EXPERIMENTAL No Chat BG, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL No Chat BG", "EXPERIMENTAL No Chat BG")
+{
+	OFF
+	ON
+}
+[Name:EXPERIMENTAL Crosshair in Scoreboard, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL Crosshair in Scoreboard", "EXPERIMENTAL Crosshair in Scoreboard")
+{
+	OFF
+	ON
+}
+[Name:EXPERIMENTAL Scoreboard Slide In, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL Scoreboard Slide In", "EXPERIMENTAL Scoreboard Slide In")
+{
+	OFF
+	ON
+}
+[Name:EXPERIMENTAL Scope Removal, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL Scope Removal", "EXPERIMENTAL Scope Removal")
+{
+	OFF
+	ON
+}
+[Border:0, FG:#1C1B1C]
+Banner("_4plug/4plug_images/noscope.png", "auto", "topleft");
+[Name:EXPERIMENTAL Square Shadows, Default:Lower, FG:#008E2A, BG:#F4F4F5, Border:0]
+GlobalComboBox("EXPERIMENTAL Square Shadows", "EXPERIMENTAL Square Shadows")
+{
+	OFF
+	ON
+}
+Banner("_4plug/4plug_images/squares.png", "auto", "topleft");
+
+#if EXPERIMENTAL Square Shadows == "OFF"
+{
+Copy("_4plug/empty_scheme.res", "_jofrenew/#customization/resource/scheme_4plug1.res");
+Copy("_4plug/empty.txt", "cfg/#customization/squareaddon1.cfg");
+}
+#if EXPERIMENTAL Square Shadows == "ON"
+{
+Copy("_4plug/4plug_overrides/square/ON.res", "_jofrenew/#customization/resource/scheme_4plug1.res");
+Copy("_4plug/4plug_overrides/addon1.cfg", "_jofrenew/#customization/cfg/addon1.cfg");
+}
+
+#if EXPERIMENTAL Scope Removal == "OFF"
+{
+Copy("_4plug/4plug_overrides/magnumhud/removescope_off.txt", "_jofrenew/resource/ui_overrides/+removescope.txt");
+}
+#if EXPERIMENTAL Scope Removal == "ON"
+{
+Copy("_4plug/4plug_overrides/magnumhud/removescope.txt", "_jofrenew/resource/ui_overrides/+removescope.txt");
+}
+
+
+#if EXPERIMENTAL Scoreboard Slide In == "OFF"
+{
+Copy("_4plug/4plug_overrides/magnumhud/scoreboard_slide_off.txt", "_jofrenew/resource/ui_overrides/+scoreboardslidein.txt");
+#if EXPERIMENTAL Scoreboard Slide In == "ON"
+{
+Copy("_4plug/4plug_overrides/magnumhud/scoreboard_slide.txt", "_jofrenew/resource/ui_overrides/+scoreboardslidein.txt");
+}
+
+
+#if EXPERIMENTAL Crosshair in Scoreboard == "OFF"
+{
+Copy("_4plug/4plug_overrides/magnumhud/crosshair_on_scoreboard_off.txt", "_jofrenew/resource/ui_overrides/+crosshair_in_scoreboard.txt");
+}
+#if EXPERIMENTAL Crosshair in Scoreboard == "ON"
+{
+Copy("_4plug/4plug_overrides/magnumhud/crosshair_on_scoreboard.txt", "_jofrenew/resource/ui_overrides/+crosshair_in_scoreboard.txt");
+}
+
+
+
+#if EXPERIMENTAL No Chat BG == "OFF"
+{
+Copy("_4plug/4plug_overrides/magnumhud/chat_bg_off.txt",  "_jofrenew/resource/ui_overrides/+nochatbg.txt");
+}
+#if EXPERIMENTAL No Chat BG == "ON"
+{
+Copy("_4plug/4plug_overrides/magnumhud/chat_bg.txt",  "_jofrenew/resource/ui_overrides/+nochatbg.txt");
+}
+
+
+
+#if EXPERIMENTAL Cart BG Glow == "OFF"
+{
+Copy("_4plug/empty.txt", "_jofrenew/resource/ui_overrides/+cart_glow.txt");
+Copy("_4plug/4plug_has_run.res", "_jofrenew/resource/ui_overrides/!4plug_run_sc.res");
+}
+#if EXPERIMENTAL Cart BG Glow == "ON (Needs Transparent V.)"
+{
+Copy("_4plug/4plug_overrides/CartGlow/ON.txt", "_jofrenew/resource/ui_overrides/+cart_glow.txt");
+Copy("_4plug/4plug_has_run.res", "_jofrenew/resource/ui_overrides/!4plug_run_sc.res");
+}
+
+
+
+#if Steam Summer Sale Border == "Disabled"
+{
+Copy("_4plug/empty_res.txt", "_jofrenew/#customization/resource/ui/summersale_border.res");
+}
+#if Steam Summer Sale Border == "Portal Orange"
+{
+Copy("_4plug/4plug_overrides/summersale/orange.res", "_jofrenew/#customization/resource/ui/summersale_border.res");
+}
+#if Steam Summer Sale Border == "Portal Blue"
+{
+Copy("_4plug/4plug_overrides/summersale/azul.res", "_jofrenew/#customization/resource/ui/summersale_border.res");
+}
+#if Steam Summer Sale Border == "Neon"
+{
+Copy("_4plug/4plug_overrides/summersale/neon.res", "_jofrenew/#customization/resource/ui/summersale_border.res");
+}
+
+
+
+#if ADDON Transparent == "ON"
+{
+Copy("_4plug/4plug_overrides/transparent_on.res", "_jofrenew/resource/ui_overrides/-transparent.res");
+}
+#if ADDON Transparent == "OFF"
+{
+Copy("_4plug/empty_res.txt", "_jofrenew/resource/ui_overrides/-transparent.res");
+}
+
+
+
+
+#if ADDON Transparent Class Model == "On"
+{
+Copy("_4plug/4plug_overrides/ui/class-transparent.res", "_jofrenew/#customization/resource/ui/hudplayerclass - transparent.res");
+}
+#if ADDON Transparent Class Model == "Off"
+{
+Copy("_4plug/4plug_overrides/ui/class-transparent-off.res", "_jofrenew/#customization/resource/ui/hudplayerclass - transparent.res");
+}
+
+#if Resolution == "1980x1080"
+{
+Copy("_4plug/4plug_overrides/resolution/1920ammo.res", "_jofrenew/resource/ui_overrides/!res_ammo.res");
+Copy("_4plug/4plug_overrides/resolution/1920health.res", "_jofrenew/resource/ui_overrides/!res_health.res");
+}
+#if Resolution == "1366x768"
+{
+Copy("_4plug/4plug_overrides/resolution/1366ammo.res", "_jofrenew/resource/ui_overrides/!res_ammo.res");
+Copy("_4plug/4plug_overrides/resolution/1366health.res", "_jofrenew/resource/ui_overrides/!res_health.res");
+}
+#if Resolution == "1680x1050"
+{
+Copy("_4plug/4plug_overrides/resolution/1680ammo.res", "_jofrenew/resource/ui_overrides/!res_ammo.res");
+Copy("_4plug/4plug_overrides/resolution/1680health.res", "_jofrenew/resource/ui_overrides/!res_health.res");
+}
