@@ -4,7 +4,7 @@ Scheme
 	Colors
 	{
 		//--------------------------------Windows :)
-		"W_BorderArmed"	"204 135 41 255"
+		"W_BorderArmed"	"255 152 0 255"
 		"W_CerrarArmed"	"255 64 64 255"
 
 	//	"W_ColorTheme1"	"238 238 238 255"	//barra
@@ -18,11 +18,11 @@ Scheme
 	//	"W_ColorIcons1Blur"	"0 6 0 178"
 	//	"W_ColorIconsArmed1" "217 171 108 255"
 
-		"W_ColorTheme1"	"47 49 47 255"
-		"W_ColorTheme2"	"37 37 37 255"//248
+		"W_ColorTheme1"	"17 17 17 255"
+		"W_ColorTheme2"	"7 7 7 250"//248
 		"W_ColorTheme3"	"16 11 16 255"
 		"W_ColorLinea1"		"27 27 27 170"//170
-		"W_ColorIcons1"	"245 245 245 255"
+		"W_ColorIcons1"	"211 215 225 255"
 		"W_ColorIcons2"	"220 238 255 255"
 		"W_ColorIcons1Blur"	"245 245 245 170"
 		"W_ColorTexto1" "119 100 192 255"	//purple

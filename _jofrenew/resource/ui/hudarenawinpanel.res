@@ -12,35 +12,11 @@
 
 		"BlueScoreBG"
 		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"BlueScoreBG"
-			"xpos"			"0"
-			"ypos"			"13"
-			"wide"			"240"
-			"tall"			"50"
-			//"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			//"enabled"		"1"
-			"image"			"../hud/winpanel_blue_bg_team"
-			"image_lodef"	"../hud/winpanel_blue_bg_team_lodef"
-			"scaleImage"		"1"
+			"ypos"			"r0"
 		}
 		"RedScoreBG"
 		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"RedScoreBG"
-			"xpos"			"140"
-			"ypos"			"13"
-			"wide"			"240"
-			"tall"			"50"
-			//"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			//"enabled"		"1"
-			"image"			"../hud/winpanel_red_bg_team"
-			"image_lodef"	"../hud/winpanel_red_bg_team_lodef"
-			"scaleImage"		"1"
+			"ypos"			"r0"
 		}
 		"BlueTeamLabel"
 		{
@@ -154,25 +130,7 @@
 	
 		"ArenaStreaksBG"
 		{
-			"ControlName"		"ScalableImagePanel"
-			"fieldName"		"ArenaStreaksBG"
-			"xpos"			"9999"
-			"ypos"			"38"
-			"zpos"			"2"
-			"wide"			"176"
-			"tall"			"20"
-			//"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			//"enabled"		"1"
-			"image"			"../HUD/tournament_panel_black"
-			"scaleImage"		"1"
-	
-			"src_corner_height"	"23"				// pixels inside the image
-			"src_corner_width"	"23"
-		
-			"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"ypos"			"r0"
 		}	
 
 		"ArenaStreakLabel"
@@ -199,16 +157,7 @@
 
 	"WinPanelBG"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"WinPanelBG"
-		"xpos"			"-123"
-		"ypos"			"59"
-		"zpos"			"0"
-		"wide"			"700"
-		"tall"			"174"
-		"visible"		"0"
-		//"enabled"		"1"
-		"scaleImage"		"1"	
+"ypos"			"r0"
 	}
 	"WinningTeamLabel"
 	{	
@@ -332,21 +281,7 @@
 	}
 	"ShadedBar"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"ShadedBar"
-		"xpos"			"36"
-		"ypos"			"123"
-		"zpos"			"2"
-		"wide"			"382"
-		"tall"			"84"
-		//"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		//"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 0"
-		"fillcolor_lodef"		"0 0 0 0"
-		"PaintBackgroundType"	"0"
+		"tall"			"0"
 	}
 	"TopPlayersLabel"
 	{	

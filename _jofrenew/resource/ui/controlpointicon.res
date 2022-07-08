@@ -30,17 +30,7 @@
 
 	"CapPlayerImage"
 	{
-		"ControlName"	"ImagePanel"		
-		"fieldName"	"CapPlayerImage"
-		"xpos"		"0"
-		"ypos"		"9999"
-		"zpos"		"3"
-		"wide"		"0"
-		"tall"		"0"
-		"visible"	"0"
-		"enabled"	"1"
-		"image"		"capture_icon"
-		"scaleImage"	"1"
+		"wide"						"0"
 	}
 
 	"CapNumPlayers"
@@ -52,12 +42,8 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"4"
-		"wide"			"30"
-		"tall"			"30"
-		//"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		//"enabled"		"1"
+		"wide"			"22"
+		"tall"			"o1"
 		"labelText"		"#ControlPointIconCappers"
 		"textAlignment"		"center"
 	}

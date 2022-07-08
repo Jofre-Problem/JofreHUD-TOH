@@ -1,3 +1,4 @@
+#base "../uni_base/image/1.res"
 "Resource/UI/HudBossHealth.res"
 {
 	"BorderImage"
@@ -17,20 +18,29 @@
 		"image"			"../hud/halloween_bar_surround"
 		"scaleImage"	"1"					
 	}
-	
-	"BossBG"
+		
+	"Gradient"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BossBG"
+		"ControlName"		"CTFImagePanel"
+		"fieldName"			"Gradient"
+		"xpos"				"15"
+		"ypos"				"16"
+		"zpos"				"49"
+		"wide"				"168"
+		"tall"				"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"image"				"replay/thumbnails/gradient"
+		"scaleImage"		"1"
+	}	
+	"1_image"
+	{
 		"xpos"			"14"
 		"ypos"			"15"
-		"zpos"			"0"
-		"wide"			"170"
-		"tall"			"17-p0.005"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"
-		"fillcolor"		"32 32 32 255"
+		"wide"			"169"
+		"tall"			"13"
+		"fillcolor"		"45 45 45 0"
+		"Border"		"Steamworkshopborder"
 	}
 	
 	"HealthBarPanel"
@@ -53,17 +63,18 @@
 			"ypos"			"0"
 			"zpos"			"5"
 			"wide"			"167"
-			"tall"			"16"
+			"tall"			"11"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"image"			"../hud/halloween_bar"
+			"image"			"replay/thumbnails/hp/REFRACTblur"
 			"scaleImage"	"1"					
 		}
+	
 	}				
-
+	
 	"StunMeter"
 	{	
 		"ControlName"	"ContinuousProgressBar"

@@ -8,42 +8,7 @@
 		"name_width"	"57"
 		"horiz_inset"	"2"
 	}
-"TeamStatus"
-{
-"ControlName""CTFTeamStatus"
-"fieldName""TeamStatus"
 
-
-"zpos""2"
-"wide""f0"
-"tall""75"
-//"visible""1"
-
-
-
-"max_size""19"
-
-"6v6_gap""4"
-"12v12_gap""1"
-
-"team1_grow_dir" "west"
-"team1_base_x""c-50"
-"team1_max_expand""150"
-
-"team2_grow_dir" "east"
-"team2_base_x""c52"
-"team2_max_expand""150"
-
-"playerpanels_kv"
-{
-"visible""0"
-"wide""25"
-"tall""50"
-"zpos""1"
-
-"color_portrait_bg_red""190 45 57 255"
-"color_portrait_bg_red_dead""79 54 52 255"
-}}
 	"RoundSignModel"
 	{
 		"ControlName"	"CModelPanel"
@@ -139,7 +104,20 @@
 		"NegativeColor"			"255 0 0 255"
 		"delta_lifetime"		"1.0"
 		"delta_item_font"		"Noto24"
-		
+		"textAlignment"		"center"
+if_match
+{
+"xpos""cs-0.5"
+"wide""130"
+////"ypos_minmode""0"
+"delta_item_x""35"
+"delta_item_start_y""12"
+"delta_item_end_y""50"
+"PositiveColor""0 255 0 255"
+"NegativeColor""255 0 0 255"
+"delta_lifetime""1.5"
+"delta_item_font""Noto24"
+}		
 		"TimePanelValue"
 		{
 			"ControlName"		"CExLabel"
@@ -153,10 +131,26 @@
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"east"
+			"textAlignment"		"center"
+			"delta_item_font""Noto24"
 		//	"labelText"		"0:00"
+		if_match
+{
+"xpos""cs-0.5"
+"wide""130"
+////"ypos_minmode""0"
+"delta_item_x""35"
+"delta_item_start_y""12"
+"delta_item_end_y""50"
+"PositiveColor""0 255 0 255"
+"NegativeColor""255 0 0 255"
+"delta_lifetime""1.5"
+"delta_item_font""Noto24"
+}	
 		}
+	
 	}
+
 	"MatchDoors"
 	{
 		"ControlName"	"CModelPanel"

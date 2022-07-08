@@ -1,3 +1,4 @@
+#base "../../uni_base/image/1.res"
 "Resource/UI/Spectator.res"
 {
 "topbar"
@@ -8,6 +9,14 @@
 {
 "ypos""r0"
 }
+			"1_image"
+			{
+				"xpos"		"cs-0.5"
+				"zpos"			"-200"
+				"wide"			"f0"
+				"tall"			"0"
+				"fillColor"			"34 34 42 255"
+			}	
 	"bottombarblank"
 	{
 		"ypos"			"r0"
@@ -23,7 +32,7 @@
 		"wide"			"f0"
 		"tall"			"25"
 		"textAlignment"		"center"
-		"font"			"ViewerNumber"
+		"font"			"Noto10"
 	}
 
 

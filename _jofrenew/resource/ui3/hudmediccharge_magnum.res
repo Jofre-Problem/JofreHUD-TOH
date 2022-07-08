@@ -1,13 +1,36 @@
 #base "../../overrides/circlesforstuff/file2.res"
-
+#base "../uni_base/image/1.res"
 #base "../../overrides/teamcolor_always_red/ammo.res"
 #base "../../overrides/teamcolor_always_blu/ammo.res"
 #base "../../overrides/teamcolor_always_white/ammo.res"
 
 #base "../ui3/teamcolor/ammo.res"
+#base "../uni_base/cexlabel/1.res"
+#base "../uni_base/image/2.res"
+#base "../uni_base/image/3.res"
+#base "../uni_base/image/4.res"
+#base "../uni_base/cexlabel/2.res"
+#base "../uni_base/progress/1.res"
+#base "../uni_base/panel/1.res"
+//props to anyone who understands this mess
 
-"Resource/UI/HudMedicCharge.res"
-{	
+"Resource/UI/HudAmmoWeapons.res"
+{
+	"2_Image"
+	{
+		"zpos"			"5"
+		"wide"			"17"
+		"tall"			"34"
+		"fillcolor"		"35 35 35 255"
+	}
+	"3_Image"
+	{
+		"xpos"			"71"
+		"zpos"			"5"
+		"wide"			"17"
+		"tall"			"34"
+		"fillcolor"		"35 35 35 255"
+	}
 	"Background"
 	{
 		"wide"			"0"			
@@ -39,124 +62,35 @@
 //		"teambg_2"		"replay/thumbnails/hp/redteam2"
 //		"teambg_3"		"replay/thumbnails/hp/bluteam2"
 	}
-	"BarShadow"
+	"1_image"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BarShadow"
-		"xpos"			"0"
 		"ypos"			"34"
 		"wide"			"150"
 		"tall"			"2"
-		"visible"		"1"
-		//"enabled"		"1"
 		"fillcolor"		"0 0 0 140"
 	}
-	"ChargeLabel"
+	"4_image"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ChargeLabel"
-		"font"			"HealthAndAmmo"
-		"fgcolor"		"35 35 35 255"
-		"xpos"			"-2457"
-		"ypos"			"-5"
-		"zpos"			"5"
-		"wide"			"5000"
-		"tall"			"40"
-		"textAlignment"	"center"	
-		"labelText"		"#uberpadded"	
-	}
-	"ChargeLabelBG"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ChargeLabelBG"
-		"font"			"HealthAndAmmo"
-		"fgcolor"		"35 35 35 255"
-		"xpos"			"-2453"
-		"ypos"			"-5"
-		"zpos"			"4"
-		"wide"			"5000"
-		"tall"			"40"
-		"textAlignment"	"center"	
-		"labelText"		"---"	
-		"alpha"			"0"
-	}
-	"AmmoWhiteCover"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"AmmoWhiteCover"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"5"
-		"wide"			"17"
-		"tall"			"34"
-		"visible"		"1"
-		//"enabled"		"1"
-		"fillcolor"		"35 35 35 255"
-	}
-	"AmmoWhiteCover2"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"AmmoWhiteCover2"
-		"xpos"			"71"
-		"ypos"			"0"
-		"zpos"			"5"
-		"wide"			"17"
-		"tall"			"34"
-		"visible"		"1"
-		//"enabled"		"1"
-		"fillcolor"		"35 35 35 255"
-	}
-	"HealthDivider"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"HealthDivider"
 		"xpos"			"85"
-		"ypos"			"0"
-		"zpos"			"20"
+		"zpos"			"200"
 		"wide"			"5"
 		"tall"			"36"
-		"visible"		"1"
-		//"enabled"		"1"
 		"image" 		"replay/thumbnails/hp/REFRACTnormal"
-		"scaleimage"	"1"
 	}
 	
 	
 
-	"IndividualChargesLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"IndividualChargesLabel"
-		"font"			"HealthAndAmmo"
-		"fgcolor"		"35 35 35 255"
-		"xpos"			"-2457"
-		"ypos"			"-5"
-		"zpos"			"5"
-		"wide"			"5000"
-		"tall"			"40"
-		"visible"		"1"
-		//"enabled"		"1"
-		"textAlignment"	"center"	
-		"labelText"		"#vacuberpadded"	
-	}
 	
-	"TriUber"
+	"1_progress"
 	{
-		"ControlName"		"CircularProgressBar"
-		"fieldName"		"TriUber"
 		"xpos"			"89"
 		"ypos"			"-1"
 		"zpos"			"2"
 		"wide"			"36"
 		"tall"			"36"
-		"visible"		"1"
-		//"enabled"		"1"
 		"variable"		"charge"
 		"fg_image"		"replay/thumbnails/hp/cover"
 		"bg_image"		"replay/thumbnails/bg_blank"
-		"fgcolor_override"	"255 255 255 255"
-		"bgcolor_override"	"255 255 255 255"
-		"scaleImage"		"1"
 	}
 	
 	"ChargeMeter"
@@ -181,20 +115,6 @@
 		"fgcolor_override" "245 245 245 255"
 		"alpha"			"0"
 	}
-	"ChargeMeterBG"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ChargeMeterBG"
-		"xpos"			"89"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"36"
-		"tall"			"34"
-		"visible"		"1"
-		//"enabled"		"1"
-		"image"			"replay/thumbnails/hp/cover"
-		"scaleImage"	"1"	
-	}
 	"ChargeMeterBGNew"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -211,22 +131,6 @@
 		"teambg_2"		"replay/thumbnails/hp/redteam2"
 		"teambg_3"		"replay/thumbnails/hp/bluteam2"
 	}
-	"ChargeMeterBGNewFill"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"ChargeMeterBGNewFill"
-		"xpos"			"89"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"36"
-		"tall"			"34"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha"			"0"
-		"scaleImage"	"1"	
-	}
-
 	"ChargeMeter1"
 	{	
 		"ControlName"	"ContinuousProgressBar"
@@ -237,10 +141,6 @@
 		"zpos"			"8"
 		"wide"			"17"
 		"tall"			"17"		
-		//"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		//"enabled"		"1"
 		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -310,7 +210,47 @@
 		"bgcolor_override" "0 0 0 180"
 		"alpha"			"245"
 	}
-	
+	"ChargeLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ChargeLabel"
+		"font"			"HealthAndAmmo"
+		"fgcolor"		"35 35 35 255"
+		"xpos"			"-384"
+		"ypos"			"-5"
+		"zpos"			"5"
+		"wide"			"f0"
+		"tall"			"40"
+		"textAlignment"	"center"	
+		"labelText"		"#uberpadded"	
+	}		
+	"1_label"
+	{
+		"font"			"HealthAndAmmo"
+		"fgcolor"		"35 35 35 255"
+		"xpos"			"-381"
+		"ypos"			"-5"
+		"zpos"			"4"
+		"wide"			"f0"
+		"tall"			"40"
+		"textAlignment"	"center"	
+		"labelText"		"---"	
+		"alpha"			"0"
+	}	
+	"IndividualChargesLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"IndividualChargesLabel"
+		"font"			"HealthAndAmmo"
+		"fgcolor"		"35 35 35 255"
+		"xpos"			"-384"
+		"ypos"			"-5"
+		"zpos"			"5"
+		"wide"			"f0"
+		"tall"			"40"
+		"textAlignment"	"center"
+		"labelText"		"#vacuberpadded"	
+	}	
 	"HealthClusterIcon"
 	{
 		"ControlName"	"ImagePanel"
@@ -325,16 +265,10 @@
 		"image"			"../hud/ico_health_cluster"
 		"scaleImage"	"1"	
 	}	
-	"ResistIconAnchor" // Icon Anchor to move Vaccinator Resistance
+	"1_editable" // Icon Anchor to move Vaccinator Resistance
 	{
-		"ControlName" "EditablePanel"
-		"fieldName" 	"ResistIconAnchor"
 		"xpos" 		"91"
 		"ypos"		"1"
-		"wide"		"32"
-		"tall" 		"32"
-		"visible"	"1"
-		"enabled" 	"1"
 	}
 	"ResistIcon"
 	{
@@ -349,7 +283,7 @@
 		//"enabled"		"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"scaleImage"	"1"	
-		"pin_to_sibling" 	"ResistIconAnchor"
+		"pin_to_sibling" 	"1_editable"
 		"pin_corner_to_sibling" "1"
 		"pin_to_sibling_corner" "1"
 		"alpha"			"220"

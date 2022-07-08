@@ -18,8 +18,8 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"cs-0.5"
 		"zpos"			"3"		
-		"wide"			"f0"
-		"tall"			"f0"
+		"wide"			"100"
+		"tall"			"200"
 		"proportionaltoparent"	"1"
 		"actionsignallevel"	"2"
 
@@ -63,8 +63,8 @@
 			"xpos"			"cs-0.5"
 			"ypos"			"cs-0.5"
 			"zpos"			"0"		
-			"wide"			"o1"
-			"tall"			"p0.12"
+			"wide"			"60"
+			"tall"			"o1"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -92,7 +92,7 @@
 				"angles_x"	"0"
 				"angles_y"	"180"
 				"angles_z"	"0"
-				"origin_x"		"45"
+				"origin_x"		"40"
 				"origin_y"		"0"
 				"origin_z"		"0"
 				"spotlight"	"1"
@@ -214,47 +214,50 @@
 		}
 		"NameLabel"
 		{
-"xpos""5"
-"ypos""cs-0.5"
-"wide""f0"
-"tall""30"
-"font""Journal38"
-"fgcolor_override"	"White"
-			"textAlignment"	"center"
+"xpos""60"
+"ypos""375"
+"wide""0"
+"tall""0"
+"font""Regular14"
+"fgcolor_override"	"W_ColorIcons1"
+			"textAlignment"	"west"
 			"textinsetx"	"0"
+			"auto_wide_tocontents"	"1"
 		}
 "DescLine1fix"
 {
 "ControlName""cexLabel"
 "fieldName""DescLine1fix"
-
-
-
-"fgcolor_override""A_ColorTheme1"
-
+"fgcolor_override""W_ColorIcons1"
 "labelText""%desc1%"
-
-		"xpos""60"
-		"ypos""50"
-		"wide""f0"
-		"tall""0"
-			"fgcolor_override"	"White"
-			"textAlignment"	"center"
-			"font"	"Journal30"
-}		
+"textAlignment"	"center"
+		"xpos""rs1-15"
+		"ypos""195"
+		"wide""90"
+		"tall""15"
+			"font"	"Regular12"	
+}
+"DescLine2fix"
+{
+"ControlName""cexLabel"
+"fieldName""DescLine2fix"
+"fgcolor_override""W_ColorIcons1"
+"labelText""%desc2%"
+"textAlignment"	"center"
+		"xpos""rs1-15"
+		"ypos""205"
+		"wide""90"
+		"tall""15"
+			"font"	"Regular12"	
+}			
 		"DescLine1"
 		{
-		"tall""0"
+		"wide""0"
 		}
 
 		"DescLine2"
 		{
-		"xpos""10"
-		"ypos""90"
-		"wide""f0"
-		"tall""0"
-			"fgcolor_override"	"White"
-			"textAlignment"	"west"
+		"wide""0"
 		}
 
 		"StatsContainer"
@@ -274,6 +277,7 @@
 				"ypos"			"0"
 				"wide"			"p0.85"
 			}
+			
 			"XPBar"
 			{
 				"Controlname"	"EditablePanel"
@@ -288,34 +292,24 @@
 
 				"CurrentXPLabel"
 				{
-					"ControlName"	"Label"
-					"fieldName"		"CurrentXPLabel"
-					"xpos"			"10"
-					"ypos"			"100"
-					"zpos"			"20"
-					"wide"			"f0"
-					"tall"			"0"
-					"visible"		"1"
-					//"enabled"		"1"
-					"font"			"Regular12"
-					"fgcolor_override"	"255 255 255 255"
-					"textAlignment"	"west"
+"fgcolor_override""PolybarTheme4"
+"textAlignment"	"center"
+		"xpos""rs1-15"
+		"ypos""215"
+		"wide""90"
+		"tall""15"
+			"font"	"Regular12"	
 				}
 
 				"NextLevelXPLabel"
 				{
-					"ControlName"	"Label"
-					"fieldName"		"NextLevelXPLabel"
-					"xpos"			"10"
-					"ypos"			"110"
-					"zpos"			"20"
-					"wide"			"f0"
-					"tall"			"0"
-"visible""1"
-"enabled""1"
-"font""Regular12"
-"fgcolor_override""White"
-"textAlignment""west"
+"fgcolor_override""PolybarTheme2"
+"textAlignment"	"center"
+		"xpos""rs1-15"
+		"ypos""224"
+		"wide""90"
+		"tall""15"
+			"font"	"Regular12"	
 				}
 
 				"ProgressBarsContainer"
@@ -332,31 +326,32 @@
 					{
 						"ControlName"	"ProgressBar"
 						"fieldName"		"ProgressBar"
-						"xpos"			"0"
-						"ypos"			"rs1"
+						"xpos"			"cs-0.5"
+						"ypos"			"r64"
 						"wide"			"f0"
-						"tall"			"1"
+						"tall"			"5"
 						"zpos"			"1"
 						"proportionaltoparent"	"0"
 						"progress"		"1"
 						"alpha"			"255"
 						"fgcolor_override"	"A_ColorTheme1"
-						"bgcolor_override"	"0 0 0 0"
+						"bgcolor_override"	"34 34 34 0"
 					}
 
 					"ContinuousProgressBar"
 					{
 						"ControlName"	"ContinuousProgressBar"
 						"fieldName"		"ContinuousProgressBar"
-						"xpos"			"cs-0.5"
-						"ypos"			"rs1"
+						"xpos"			"0"
+						"ypos"			"0"
 						"wide"			"f0"
-						"tall"			"1"
+						"tall"			"5"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
 						"fgcolor_override"	"PolybarTheme4"
-						"bgcolor_override"	"0 0 0 0"
+						"bgcolor_override"	"PolybarTheme2"
+						"pin_to_sibling"	"ProgressBar"
 					}
 
 					"Frame"
@@ -376,7 +371,7 @@
 			"ypos"		"0"
 
 			"wide"		"f0"	
-			"tall"		"0"	
+			"tall"		"f0"	
 			"PaintBackgroundType"	"0"
 			"paintbackground"		"1"
 			"mouseInputenabled"	"0"		
@@ -388,11 +383,22 @@
 			"xpos"		"0"
 			"ypos"		"0"
 				"wide"			"f0"
-				"tall"			"0"
+				"tall"			"f0"
 				"visible"		"1"
 				"proportionaltoparent"	"1"
 				"bgcolor_override"	"Blank"
-
+			"PanelRank"
+			{
+				"ControlName"	"EditablePanel"
+				"fieldname"		"PanelRank"		
+				"xpos"			"rs1-16"
+				"ypos" "2"
+				"zpos"			"-200"
+				"wide"			"90"
+				"tall"			"110"
+				"bgcolor_override"			"W_ColorTheme2"
+				"PaintBackgroundType"	"2"			
+			}	
 				"if_mini"
 				{
 					"visible"		"0"
@@ -415,36 +421,39 @@
 				{
 					"ControlName"	"Label"
 					"fieldName"		"GamesLabel"
-					"xpos"			"10"
-					"ypos"			"c-120"
+					"xpos"			"-5"
+					"ypos"			"-5"
+					"pin_to_sibling"	"PanelRank"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
-					"visible"		"1"
-					//"enabled"		"1"
+					"pin_to_sibling"	"PanelRank"
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west""alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				"KillsLabel"
 				{
-					"xpos"			"10"
-					"ypos"			"c-110"
+					"font"			"Regular12"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
 					"visible"		"1"
 					//"enabled"		"1"
-					"font"			"Regular12"
+					"font"			"GamesLabel"
+					"pin_to_sibling"	"GamesLabel"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west"	"alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				"DeathsLabel"
 				{
-					"xpos"			"10"
-					"ypos"			"c-100"
+					"pin_to_sibling"	"KillsLabel"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
@@ -452,14 +461,15 @@
 					//"enabled"		"1"
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west"	"alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				// Second column
 				"DamageLabel"
 				{
-					"xpos"			"10"
-					"ypos"			"c-90"
+					"pin_to_sibling"	"DeathsLabel"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
@@ -467,13 +477,14 @@
 					//"enabled"		"1"
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west"	"alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				"HealingLabel"
 				{
-					"xpos"			"10"
-					"ypos"			"c-80"
+					"pin_to_sibling"	"DamageLabel"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
@@ -481,13 +492,14 @@
 					//"enabled"		"1"
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west"	"alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				"SupportLabel"
 				{
-					"xpos"			"10"
-					"ypos"			"c-70"
+					"pin_to_sibling"	"HealingLabel"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
@@ -495,14 +507,15 @@
 					//"enabled"		"1"
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
-					"textAlignment"	"west"	"alpha"	"71"
+					"textAlignment"	"west"
 				}
 
 				// Third column
 				"ScoreLabel"
 				{
-						"xpos"			"10"
-					"ypos"			"c-60"
+					"pin_to_sibling"	"SupportLabel"
+					"xpos"			"0"
+					"ypos"			"-15"
 					"zpos"			"0"
 					"wide"			"80"
 					"tall"			"13"
@@ -511,7 +524,6 @@
 					"font"			"Regular12"
 					"fgcolor_override"	"PolyIconsFg1"
 					"textAlignment"	"west"	
-					"alpha"	"71"
 				}
 			}		
 		}

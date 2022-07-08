@@ -4,51 +4,6 @@ Scheme
 
 	Fonts
 	{
-		"CloseCaption_Normal"
-		{
-			"1"
-			{
-				"name"		"Open Sans"
-				"tall"		"18"
-				"weight"	"500"
-				"Antialias" "1"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-			}
-		}
-		"CloseCaption_Bold"
-		{
-			"1"
-			{
-				"name"		"Open Sans Bold"
-				"tall"		"20"
-				//"tall_hidef"	"20"
-				"Antialias" "1"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-			}
-		}
-		"CloseCaption_Italic"
-		{
-			"1"
-			{
-				"name"		"Open Sans Italic"
-				"tall"		"50"
-				"weight"	"500"
-				"Antialias" "1"
-				"italic"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-			}
-		}			
-		"CenterPrintText"
-		{
-			"1"
-			{
-				"name" "Open Sans"
-				"tall"		"15"
-				"weight"	"250"
-				"antialias" "1"
-				"additive"	"1"				
-			}
-		}		
 		"DamagetextShadow"
 		{
 			"1"
@@ -68,6 +23,25 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+		"DamagetextShadow2"
+		{
+			"1"
+			{
+				"name" "Open Sans Nodash"
+				"tall" "16"
+				"antialias"	"1"
+				"blur" "2"
+			}
+		}
+		"Damagetext2"
+		{
+			"1"
+			{
+				"name" "Open Sans Nodash"
+				"tall" "16"
+				"antialias"	"1"
+			}
+		}		
 		"HealthAndAmmo"
 		{
 			"1"
@@ -93,6 +67,7 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+	
 		"HealthAndAmmoOutline"
 		{
 			"1"
@@ -172,14 +147,14 @@ Scheme
 			{
 				"name" "Open Sans LowHealth"
 				"tall" "89"
-				"antialias"	"0"
+				////"antialias"	"0"
 				"yres" "1024 1199"
 			}
 			"2"
 			{
 				"name" "Open Sans LowHealth"
 				"tall" "51"
-				"antialias"	"0"
+				////"antialias"	"0"
 			}
 		}
 		"LowerHealthFont"
@@ -188,14 +163,14 @@ Scheme
 			{
 				"name" "Open Sans LowerHealth2"
 				"tall" "100"
-				"antialias"	"0"
+				////"antialias"	"0"
 				"yres" "1024 1199"
 			}
 			"1"
 			{
 				"name" "Open Sans LowerHealth"
 				"tall" "70"
-				"antialias"	"0"
+				////"antialias"	"0"
 			}
 		}
 		"1HealthPusherFont"
@@ -220,7 +195,7 @@ Scheme
 			{
 				"name" "LowAmmoWarning Zero"
 				"tall" "51"
-				"antialias"	"0"
+				////"antialias"	"0"
 			}
 		}
 		"LowestAmmoFont"
@@ -229,14 +204,14 @@ Scheme
 			{
 				"name" "Open Sans LowAmmo"
 				"tall" "89"
-				"antialias"	"0"
+				////"antialias"	"0"
 				"yres" "1024 1199"
 			}
 			"2"
 			{
 				"name" "Open Sans LowAmmo"
 				"tall" "51"
-				"antialias"	"0"
+				////"antialias"	"0"
 			}
 		}
 		"AmmoBar"
@@ -385,7 +360,7 @@ Scheme
 			{
 				"name" "Open Sans TIDuberFull"
 				"tall" "100"
-				"antialias"	"0"
+				////"antialias"	"0"
 			}
 		}
 		"ViewerNumber"
@@ -421,7 +396,7 @@ Scheme
 		}
 		"10"
 		{
-			"font" "_jofrenew/font/LowAmmoWarningZero.ttf"
+			"font" "_jofrenew/font/LowAmmoWarning-Zero.otf"
 			"name" "LowAmmoWarning Zero"
 		}
 		"11"
@@ -471,7 +446,7 @@ Scheme
 		}
 		"22"
 		{
-			"font" "_jofrenew/font/OpenSans-TIDuberFull.ttf"
+			"font" "_jofrenew/font/OpenSans-TIDuberFull.otf"
 			"name" "Open Sans TIDuberFull"
 		}
 		"23"
@@ -549,11 +524,11 @@ Scheme
 			"font" "_jofrenew/font/OpenSans-LowerHealth2.ttf"
 			"name" "Open Sans LowerHealth2"
 		}	
-		"60"
-		{
-			"font" "_jofrenew/font/LowAmmoWarningZero.ttf"
-			"name" "LowAmmoWarning Zero"
-		}
+	//	"60"
+	//	{
+	//		"font" "_jofrenew/font/LowAmmoWarningZero.ttf"
+	//		"name" "LowAmmoWarning Zero"
+	//	}
 		"61"
 		{
 			"font" "_jofrenew/font/OpenSans-Nodash.ttf"

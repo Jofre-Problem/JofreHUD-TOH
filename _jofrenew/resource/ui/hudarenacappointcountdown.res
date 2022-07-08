@@ -1,20 +1,14 @@
 "Resource/UI/HudArenaCapPointCountdown.res"
 {
-"CapCountdownLabel"
-{
-"ControlName""CExLabel"
-"fieldName""CapCountdownLabel"
-"font""CustomSegundo"
-"xpos""4"
-"ypos""3"
-"zpos""-1"
-"wide""23"
-"tall""23"
-"visible""1"
-"enabled""1"
-"labelText""%capturetime%"
-"textAlignment""center"
-"fgcolor""Black"
-"bgcolor""Tanlight"
-}
+    "CapCountdownLabel"
+    {
+        "font""DamageText"
+        "xpos""2"
+        "ypos""2"
+        "zpos""-1"
+        "wide""23"
+        "tall""23"
+        "textAlignment""center"
+        "fgcolor""Black"
+    }
 }

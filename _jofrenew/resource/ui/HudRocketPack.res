@@ -6,35 +6,17 @@
 	}
 	"ItemEffectIcon"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectIcon"
-		"xpos"			"r0"
-		"ypos"			"r0"
-		"zpos"			"0"
-		"wide"			"0"
 		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
 	}
 	"ItemEffectMeterLabel"
 	{
-		"xpos"			"0"
-		"ypos"			"-1"
-		"wide"			"120"
-		"tall"			"11"
-		"visible"		"1"
-		//"enabled"		"1"
-		"textAlignment"	"center"
-		"font"			"CustomPrimero"
-
-		"pin_to_sibling"	"Spacer"
-		"pin_corner_to_sibling"	"PIN_CENTER_BOTTOM"
-		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
+		"tall"			"0"
 	}
 	"ItemEffectMeter"
 	{	
 		"xpos"			"-31"
-		"ypos"			"-14"
+		"ypos"			"-160"
+		"ypos_minmode"	"-140"
 		"wide"			"59"
 	}
 	"ItemEffectMeter2"

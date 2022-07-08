@@ -5,30 +5,16 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-224"	[$WIN32]
-		"ypos"			"c131"	[$WIN32]
+		"xpos"			"c-224"	
+		"ypos"			"c131"	
 		"wide"			"60"
 		"tall"			"40"
 	}
 	
 	"ItemEffectMeterBG"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"90"
-		"tall"			"56"
-		"visible"		"0"
-		"visible_minmode"	"0"
-		"enabled"		"1"
-		"image"			"../hud/misc_ammo_area_blue"
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/misc_ammo_area_red"
-		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
-		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+
+		"wide"			"0"
 	}
 	
 	"ItemEffectIcon"

@@ -6,13 +6,14 @@
 		"fieldName"		"ConfirmDialog"
 		"xpos"			"0"
 		"ypos"			"cs-0.5"
-		"wide"			"p0.3"
+		"wide"			"p0.4"//"p0.3"
+		"tall"			"40"
 	//	"tall"			"f1"
 	// hardcoded?
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"paintbackground"		"0"
-		"border"		"Rice1"
+		"paintbackground"		"3"
+		"border"		"noborder"
 		"bgcolor_override"		"Blank"
 	}
 		"Windows_Notification"
@@ -22,12 +23,12 @@
 			"xpos"		"0"
 			"ypos"		"0"
 			"zpos"		"-1000"
-			"wide"		"p0.3"
+			"wide"		"p0.4"//"p0.3"
 			"tall"		"118+p0.02"
 			"PaintBackgroundType"	"0"
 			"paintbackground"		"1"
-			"border"		"SteamWorkshopBorder"			
-			"bgcolor_override"				"Theme1"
+			"border"		"Rice1"			
+			"bgcolor_override"				"W_ColorTheme2"
 		}	
 	"TitleLabel"
 	{
@@ -39,47 +40,39 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel2"
-		"font"			"Regular14"
+		"font"			"Noto12"
 		"labelText"		"%text%"
 		"textAlignment"	"center"
 		"xpos"			"0"
-		"ypos"			"4"
+		"ypos"			"-15"
 		"zpos"			"1"
-		"wide"			"p0.3"
-		"tall"			"25"
-		"fgcolor_override"	"Black"
-	}
-	"MMBackground1"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"MMBackground1"
-		"xpos"			"180"
-		"ypos"			"38"
-		"zpos"			"19"
-		"wide"			"80"
+		"wide"			"p0.4"//"p0.3"
 		"tall"			"80"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/luz_3"
-		"scaleImage"	"1"
-	}	
+		"centerwrap"		"1"
+		"fgcolor_override"	"PolyIconsFg1"
+	}
+	//This is the most stupid
+	// weird
+	// element
+	// changing tall or wide
+	// makes the panel very tall
+	// changing font mas the wide f0
+	// wtf?
 	"ExplanationLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ExplanationLabel"
-		"font"			"EconFontSmall"
-		//if you try to change the font
-		// it gets unlock!
+		"font"			"Regular14"//"EconFontSmall"
 		"labelText"		"Seguro que quieres salir?"
 		"textAlignment"	"north"
 		"xpos"			"40"
 		"ypos"			"50"
 		"zpos"			"1"
-		"wide"			"244"
+	//	"wide"			"0"
 		"visible"		"0"
 		//"enabled"		"1"
 		"centerwrap"	"1"
-		"fgcolor_override" "Black"
+		"fgcolor_override" "200 80 60 255"
 	}
 		
 	"CancelButtonNew"
@@ -99,7 +92,6 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"cancel"
-		"defaultFgColor_override"	"Black"
 		"sound_depressed"			"sound_menu/button.wav"
 		"sound_released"			"sound_menu/button2.wav"
 		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
@@ -115,7 +107,7 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ConfirmButtonNew"
-		"xpos"			"44"
+		"xpos"			"90"
 		"ypos"			"35"
 		"zpos"			"20"
 		"wide"			"78"
@@ -133,7 +125,6 @@
 		"Command"		"confirm"
 		"sound_depressed"	"sound_menu/button.wav"
 		"sound_released"	"sound_menu/button2.wav"
-		"defaultFgColor_override"	"Black"
 		"armedBgColor_override"		"Econ.Button.ArmedBgColor"
 		"armedFgColor_override"		"Econ.Button.ArmedFgColor"
 		"depressedBgColor_override"	"Econ.Button.DepressedBgColor"

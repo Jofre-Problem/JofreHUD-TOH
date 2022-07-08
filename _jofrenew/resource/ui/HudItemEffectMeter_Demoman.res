@@ -6,11 +6,7 @@
 	HudItemEffectMeter
 	{
 		"ypos"			"r100"
-		"ypos_minmode"		"r100"
-	}
-	"ItemMeterDescription"
-	{
-		"fieldName"		"HeadsCollectedCounter"
+	//	"ypos_minmode"		"r100"
 	}
 	"ItemEffectMeterCount"
 	{

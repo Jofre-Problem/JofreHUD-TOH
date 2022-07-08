@@ -6,12 +6,12 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"10"
-		"ypos"			"rs1-50"
-		"wide"	 		"150"
+		"xpos"			"4+p0.001"
+		"ypos"			"rs1-85" //enough space for nohboard
+		"wide"	 		"250"
 		"tall"	 		"120"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override" "0 0 0 0"		//this changes the bg u kno (minus except for the alpha), except I bs it with animations anyway (which does change alpha :B )
+		"bgcolor_override" "0 0 0 0"
 	}
 
 	ChatInputLine
@@ -20,9 +20,10 @@
 		"fieldName" 		ChatInputLine
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"0"
+		"xpos"			"-12" [$WINDOWS]
+		"xpos"			"0" [$LINUX]
 		"ypos"			"395"
-		"wide"	 		"150" //350
+		"wide"	 		"250" //350
 		"tall"	 		"2"
 		"PaintBackgroundType"	"0"
 	}
@@ -54,7 +55,7 @@
 		"fieldName"		"HudChatHistory"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"	 		"150"
+		"wide"	 		"250"
 		"tall"			"75"
 		"wrap"			"1"
 		"autoResize"		"1"

@@ -1,7 +1,19 @@
 // Choose which hero you play as
 #base "../#jofre/blur_bg.res"
-"Resource/UI/ClassSelection.res"
+#base "../ui2/polybar_1.res"
+#base "../ui2/polyconfig1.res"
+//#base "../uni_base/cexlabel/1.res"
+//#base "../uni_base/cexlabel/2.res"
+#base "../uni_base/image/1.res"
+#base "../uni_base/cexlabel/tf2.res"
+#base "../uni_base/cexlabel/o.res"
+"Resource/UI/TeamMenu.res"
 {
+	"o_label"
+	{
+		"xpos"			"rs1-30"
+	}	
+
 	"class"
 	{
 		ControlName				Frame
@@ -14,8 +26,21 @@
 	"BlurMainBG"
 	{
 		"zpos"			"-100"
-	}	
+	}
+	"Hint"
+	{
+		"wide"			"0"
+	}			
 	"Offense"
+	{
+		"wide"			"0"
+	}	
+"CountLabel"
+	{
+		"ypos"			"r0"
+	}	
+
+"ClassHighlightText"
 	{
 		"wide"			"0"
 	}	
@@ -75,19 +100,16 @@
 		"tall"				"0"
 	}	
 
-	"WheelImage"
+	"1_image"
 	{
-		ControlName				ImagePanel
-		fieldName				"WheelImage"
 		xpos					cs-0.5
 		ypos					cs-0.5
 		zpos					-2
 		wide					o1
 		tall					300
-		alpha					50
+		alpha					30
 
 		image					"replay/thumbnails/hud/SelectionWheel9"
-		scaleImage				1
 	}
 	
 	"scout"				// icon, updates the player model
@@ -1462,7 +1484,7 @@
 	"KeyboardShortcutLoadout(E)"
 	{
 		ControlName				CExButton
-		fieldName				"KeyboardShortcutRandom(E)"
+		fieldName				"KeyboardShortcutLoadout(E)"
 		wide					0
 		tall					0
 		labelText				"&E"
@@ -1472,7 +1494,7 @@
 	"KeyboardShortcutLoadout(L)"
 	{
 		ControlName				CExButton
-		fieldName				"KeyboardShortcutRandom(L)"
+		fieldName				"KeyboardShortcutLoadout(L)"
 		wide					0
 		tall					0
 		labelText				"&L"
@@ -1669,137 +1691,46 @@
 
 	"MvMUpgradeImageScout"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageScout"
-		"xpos"						"c-270"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+		"wide"						"0"
 	}
 	
 	"MvMUpgradeImageSolider"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageSolider"
-		"xpos"						"c-220"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImagePyro" 
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImagePyro" 
-		"xpos"						"c-170"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImageDemoman" 
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageDemoman" 
-		"xpos"						"c-80"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
-	
 	"MvMUpgradeImageHeavy"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageHeavy" 
-		"xpos"						"c-30"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImageEngineer"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageEngineer"
-		"xpos"						"c20"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImageMedic"
-	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageMedic"
-		"xpos"						"c108"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+		{
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImageSniper"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageSniper"
-		"xpos"						"c158"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 	
 	"MvMUpgradeImageSpy"
 	{
-		"ControlName"						"ImagePanel"
-		"fieldName"					"MvMUpgradeImageSpy"
-		"xpos"						"c208"
-		"ypos"						"30"
-		"zpos"						"10"
-		"wide"						"10"
-		"tall"						"10"
-		"visible"					"0"
-		"enabled"					"1"
-		"image"						"mvm/class_upgraded"
-		"scaleImage"						"1"
+	"wide"						"0"
 	}
 
 	// #endregion

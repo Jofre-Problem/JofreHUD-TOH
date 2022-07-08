@@ -1,3 +1,7 @@
+#base "../ui2/multiple-bg.res"
+#base "../ui3/tank_gif.res"
+#base "../uni_base/image/1.res"
+#base "../../ui_overrides/full-timer/file.res"
 "Resource/UI/StatSummary.res"
 {
 	"TFStatsSummary"
@@ -14,34 +18,74 @@
 {
 "wide""0"
 }	
-			"bg3"
-			{
-			"ControlName""ImagePanel"
-			"fieldName""bg3"
-			"xpos""0"
-			"ypos""0"
-			"zpos""0"
-			"wide""f0"
-			"tall""f0"
-			"visible""1"
-			"enabled""1"
-			"scaleImage""1"
-			"image""../console/background_upward_widescreen"
-			}
-			"bg4"
-			{
-			"ControlName""ImagePanel"
-			"fieldName""bg4"
-			"xpos""0"
+	"MMBackgroundPanel"
+	{
+		"zpos"			"-199"
+		"wide"			"f0"
+		"tall"			"480"
+
+		"MMBackgroundNeutral"
+		{
+			"zpos"			"100"
+			"wide"			"f0"
+			"tall"			"480"
+			"fillcolor"		"64 64 64 255"
+			"image"	""
+			"pin_to_sibling"	""
+		}
+		"MMBackground1"
+		{
+			"xpos"			"-300"
+			"zpos"			"101"
+			"wide"			"2000"
+			"tall"			"480"
+			"image"			"replay/thumbnails/menu/mm1"
+			"pin_to_sibling"	""
+		}
+		"MMBackground2"
+		{
+			"xpos"			"-200"
+			"zpos"			"101"
+			"wide"			"2000"
+			"tall"			"480"
+			"image"			"replay/thumbnails/menu/mm2"
+			"pin_to_sibling"	""
+		}
+		"MMBackground3"
+		{
+			"xpos"			"-300"
+			"zpos"			"101"
+			"wide"			"2000"
+			"tall"			"480"
+			"image"			"replay/thumbnails/menu/mm3"
+			"pin_to_sibling"	""
+		}
+		"MMBackground4"
+		{
+			"xpos"			"-300"
+			"ypos"			"0"
+			"zpos"			"101"
+			"wide"			"2000"
+			"tall"			"480"
+			"image"			"replay/thumbnails/menu/mm4"
+			"pin_to_sibling"	""
+		}
+		"MMBackground5"
+		{
+			"wide"			"0"
+		}		
+		"MMBackground6"
+		{
+			"wide"			"0"
+		}			
+	}			
+		"1_image"
+		{
 			"ypos""rs1-36"
-			"zpos""0"
 			"wide""f0"
 			"tall""2"
-			"visible""1"
-			"enabled""1"
-			"scaleImage""1"
 			"image""replay/thumbnails/misc/test2"
-			}				
+		}				
 		"BG2"
 			{
 				"ControlName"	"EditablePanel"
@@ -53,41 +97,27 @@
 				"paintbackground"	"1"
 				"bgcolor_override"	"W_ColorTheme2"
 			}
-			"gif"
+		"BG2_du1"
 			{
-			"ControlName""ImagePanel"
-			"fieldName""gif"
+				"ControlName"	"EditablePanel"
+				"fieldName"		"BG2_du1"
+				"xpos"			"0"
+				"ypos"			"rs1"
+				"wide"			"f0"
+				"tall"			"36"
+				"paintbackground"	"1"
+				"bgcolor_override"	"W_ColorTheme2"
+			}			
+			"tank_gif"
+			{
 			"xpos""cs-0.5"
 			"ypos""rs1-40"
 			"zpos""7"
 			"wide""32"
 			"tall""o1"
-			"visible""1"
-			"enabled""1"
-			"scaleImage""1"
-			"image""replay/thumbnails/l4d2/gif_noskill"
-			"fgcolor""TanDark"
-			}	
-			"Label"
-			{
-			"ControlName""CExLabel"
-			"fieldName""Label"				
-				"font"			"Regular14"
-				"textAlignment"		"center"
-				"xpos"				"cs-0.5"
-				"ypos"				"0"
-				"wide"				"f0"
-				"tall"				"0"
-				"labelText"			"Loading..."
-				"fgcolor_override"	"TanLight"
 			}										
 	"MainBackground"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"MainBackground"
-		"xpos"			"9999"
-		"ypos"			"0"
-		"wide"			"0"
 		"tall"			"0"
 	}	
 
@@ -238,26 +268,19 @@
 			//"enabled"		"1"
 			"fgcolor" "137 191 60 255"
 		}
-	}
-	
-	"icon"
-	{
-		"labelText"		"ü"
-	}			
+	}		
 	"MapLabel"
 	{
 		"font"			"CustomOctavo"
 		"textAlignment"		"center"
 		"xpos"				"cs-0.5"
-		"ypos"				"cs-0.5"
+		"ypos"				"cs-0.5-37"
 		"zpos"				"-90"
 		"wide"				"f0"
 		"tall"				"40"
-	//	"labelText"			"TESTING"
 		"AllCaps"			"1"
 		"fgcolor_override"	"W_ColorIcons1"
 	}
-
 	"MapType"
 	{
 		"ControlName"	"CExLabel"
@@ -323,17 +346,17 @@
 	{
 		"ControlName"		"Button"
 		"fieldName"		"CloseButton"
-		"xpos"			"r190"
-		"ypos"			"r50"
+		"xpos"			"rs1"
+		"ypos"			"rs1"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"f0"
+		"tall"			"36"
 		
 		"pinCorner"			"2"
 		"visible"		"0"
 		
-		
-		"labelText"		"#TF_Close"
+		"font"	"NotoBold30"
+		"labelText"		"Login Screen?"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"

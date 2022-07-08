@@ -20,95 +20,17 @@
 	
 	"LeftSideBG"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"LeftSideBG"
-		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
-		"ypos"			"r96"	[$X360]
-		"zpos"			"1"
-		"wide"			"280"
-		"tall"			"80"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_flagpanel_bg_left"
-		"scaleImage"	"1"	
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}
 		
 	"RightSideBG"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"RightSideBG"
-		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
-		"ypos"			"r96"	[$X360]
-		"zpos"			"1"
-		"wide"			"280"
-		"tall"			"80"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_flagpanel_bg_right"
-		"scaleImage"	"1"	
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}
 		
 	"OutlineBG"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"OutlineBG"
-		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
-		"ypos"			"r96"	[$X360]
-		"zpos"			"2"
-		"wide"			"280"
-		"tall"			"80"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_flagpanel_bg_outline"
-		"scaleImage"	"1"	
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}
 	
 	"BlueScore"
@@ -145,34 +67,7 @@
 		
 	"BlueScoreShadow"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"BlueScoreShadow"
-		"xpos"			"9999"
-		"ypos"			"r46"
-		"zpos"			"7"
-		"wide"			"75"
-		"tall"			"35"
-		"visible"		"1"
-		//"enabled"		"1"
-		"textAlignment"	"west"	
-		"labelText"		"%bluescore%"
-		"font"			"HudFontBig"
-		"fgcolor"		"Black"
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}	
 							
 	"RedScore"
@@ -209,34 +104,7 @@
 		
 	"RedScoreShadow"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"RedScoreShadow"
-		"xpos"			"9999"
-		"ypos"			"r46"
-		"zpos"			"7"
-		"wide"			"75"
-		"tall"			"35"
-		"visible"		"0"
-		//"enabled"		"1"
-		"textAlignment"	"east"	
-		"labelText"		"%redscore%"
-		"font"			"HudFontBig"
-		"fgcolor"		"Black"		
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}
 
 	"BluePanelBG"
@@ -334,8 +202,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"OutlineImage"
 		"xpos"			"c-50"
-		"ypos"			"r127"	[$WIN32]
-		"ypos"			"r148"	[$X360]
+		"ypos"			"r127"
 		"zpos"			"9"
 		"wide"			"100"
 		"tall"			"50"
@@ -349,17 +216,15 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayingTo"
-		"xpos"			"c-40"	[$WIN32]
-		"ypos"			"r16"	[$WIN32]
+		"xpos"			"c-40"
+		"ypos"			"r16"	
 		"zpos"			"4"
-		"wide"			"80"	[$WIN32]
+		"wide"			"80"	
 		"tall"			"16"
 		"visible"		"1"
 		//"enabled"		"1"
 		"labelText"		"#TF_PlayingTo"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 		"font"			"NotoBold14"
 		"fgcolor"		"NotoWhite"
 		"bgcolor_override"	"NotoDark"
@@ -382,32 +247,7 @@
 			
 	"PlayingToBG"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"PlayingToBG"
-		"xpos"			"9999"	[$WIN32]
-		"ypos"			"r31"	[$WIN32]
-		"zpos"			"3"
-		"wide"			"150"	[$WIN32]
-		"tall"			"38"	[$WIN32]
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_flagpanel_bg_playingto"
-		"scaleImage"	"1"	
-		
-		"if_hybrid"
-		{
-			"visible"	"0"
-		}
-		
-		"if_mvm"
-		{
-			"visible"	"0"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"0"
-		}
+		"wide"			"0"
 	}	
 		
 	"BlueFlag"
@@ -415,7 +255,7 @@
 		"ControlName"	"CTFFlagStatus"
 		"fieldName"		"BlueFlag"
 		"xpos"			"c-117"
-		"ypos"			"r40"	[$WIN32]
+		"ypos"			"r40"
 		"zpos"			"7"
 		"wide"			"160"
 		"tall"			"90"
@@ -456,7 +296,7 @@
 		"ControlName"	"CTFFlagStatus"
 		"fieldName"		"RedFlag"
 		"xpos"			"c-3"
-		"ypos"			"r40"	[$WIN32]
+		"ypos"			"r40"
 		"zpos"			"7"
 		"wide"			"160"
 		"tall"			"90"
@@ -497,8 +337,7 @@
 		"ControlName"	"CTFArrowPanel"
 		"fieldName"		"CaptureFlag"
 		"xpos"			"c-25"
-		"ypos"			"r57"	[$WIN32]
-		"ypos"			"r116"	[$X360]
+		"ypos"			"r57"
 		"zpos"			"5"
 		"wide"			"50"
 		"tall"			"50"

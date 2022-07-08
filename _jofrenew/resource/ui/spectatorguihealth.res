@@ -2,58 +2,19 @@
 {
 	"PlayerStatusHealthImage"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"4"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"scaleImage"	"1"	
+		"ypos"			"r-9999"
 	}		
 	"PlayerStatusHealthImageBG"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/health_bg"
-		"scaleImage"	"0"	
+"ypos"			"r-9999"
 	}	
 	"BuildingStatusHealthImageBG"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BuildingStatusHealthImageBG"
-		"xpos"			"0"
-		"ypos"			"r0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/health_equip_bg"
-		"scaleImage"	"1"	
+	"ypos"		"r-290"
 	}	
 	"PlayerStatusHealthBonusImage"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"3"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/health_over_bg"
-		"scaleImage"	"1"	
+	"ypos"			"r-9999"
 	}
 	"PlayerStatusHealthValueID"
 	{
@@ -62,14 +23,30 @@
 		"xpos"			"0"
 		"ypos"			"11"
 		"zpos"			"5"
-		"wide"			"654"
+		"wide"			"p0.768"
 		"tall"			"20"
 		"visible"		"1"
-		//"enabled"		"1"
+		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
 		"font"			"Killfeed"
-		"fgcolor"		"236 240 241 255"
+		"fgcolor"		"W_ColorIcons1"
+	}
+	"PlayerStatusHealthValueID2"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueID2"
+		"xpos"			"-40"
+		"ypos"			"420"
+		"zpos"			"5"
+		"wide"			"655"
+		"tall"			"15"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"	
+		"font"			"Killfeed"
+		"fgcolor"		"W_ColorIcons1"
 	}
 	"PlayerStatusHealthValueS"
 	{
@@ -88,22 +65,6 @@
 		"fgcolor"		"0 0 0 255"
 	"pin_to_sibling"	"PlayerStatusHealthValueID"
 	}	
-	"PlayerStatusHealthValueID2"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValueID2"
-		"xpos"			"-40"
-		"ypos"			"420"
-		"zpos"			"5"
-		"wide"			"655"
-		"tall"			"15"
-		"visible"		"1"
-		//"enabled"		"1"
-		"labelText"		"%Health%"
-		"textAlignment"	"center"	
-		"font"			"Killfeed"
-		"fgcolor"		"236 240 241 255"
-	}
 	"PlayerStatusHealthValue2S"
 	{
 		"ControlName"	"CExLabel"
@@ -121,8 +82,6 @@
 		"fgcolor"		"0 0 0 255"
 		"pin_to_sibling"	"PlayerStatusHealthValueID2"
 	}	
-
-
 	"PlayerStatusHealthValueID3"
 	{
 		"ControlName"	"CExLabel"
@@ -133,11 +92,11 @@
 		"wide"			"40"
 		"tall"			"24"
 		"visible"		"1"
-		//"enabled"		"1"
+		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
 		"font"			"SpecTargetIDhp"
-		"fgcolor"		"236 240 241 255"
+		"fgcolor"		"W_ColorIcons1"
 	}
 	"PlayerStatusHealthValue3S"
 	{
@@ -149,12 +108,12 @@
 		"wide"			"40"
 		"tall"			"24"
 		"visible"		"1"
-		//"enabled"		"1"
+		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
 		"font"			"SpecTargetIDhp"
 		"fgcolor"		"0 0 0 100"
-	}
+	}			
 	"PlayerStatusPlayerLevel"
 	{
 		"ControlName"	"CExLabel"
@@ -166,14 +125,25 @@
 		"wide"			"16"
 		"tall"			"12"
 		"visible"		"0"
-		//"enabled"		"1"
+		"enabled"		"1"
 		"textAlignment"	"center"	
 		"font"			"ScoreboardVerySmall"
 		"fgcolor"		"TFOrange"
-	}		
+	}	
 	"PlayerStatusHealthValue"
 	{
-
-		"wide"			"0"
-	}						
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValue"
+		"xpos"			"0"
+		"ypos"			"11"
+		"zpos"			"5"
+		"wide"			"40"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"west"	
+		"font"			"Killfeed"
+		"fgcolor"		"W_ColorIcons1"
+	}							
 }

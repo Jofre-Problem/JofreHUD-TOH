@@ -1,21 +1,30 @@
-#base "HudItemChargeBar.res"
+//#base "HudItemChargeBar.res"
+#base "../ui2/multiple-bg.res"
 // Sticky Charge / Shield / Huntsman
 "Resource/UI/HudDemomanCharge.res"
 {	
+	"MMBackgroundPanel"
+	{
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"160"
+		//"wide_minmode"	"75"
+		"tall"			"4"
+		"pin_to_sibling"	"ChargeMeter"
+	}		
 	"ChargeMeter"
 	{	
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"	"ChargeMeter"
 		"font"		"Default"
-		"xpos"		"cs-0.5"
+		"xpos"		"c-80"
 		"ypos"		"r140"
-		"ypos_minmode"	"r120"
 		"zpos"		"2"
 		"wide"		"160"
-		"wide_minmode"	"80"
-		"tall"		"3"	
-		"tall_minmode"		"3"			
-		//"autoResize"	"0"
+		"tall"		"4"	
+	//	"tall_minmode"		"3"			
+		"autoResize"	"0"
 		"pinCorner"	"0"
 		"visible"	"1"
 		"enabled"	"1"
@@ -23,6 +32,8 @@
 		"dulltext"	"0"
 		"brighttext"	"0"
 		"fgcolor_override"	"245 245 245 255"
-		"bgcolor_override"	"0 0 0 100"
+		"bgcolor_override"	"0 0 0 200"
+		"border"				"Rice1"
 	}	
+
 }

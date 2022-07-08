@@ -4,9 +4,18 @@
 #base "../ui2/testgradient.res"
 //#base "../ui2/polybg.res"
 #base "../ui2/tank.res"
-
+#base "../ui2/multiple-bg.res"
+#base "../../ui_overrides/full-timer/file.res"
 "Resource/UI/CharInfoPanel.res"
 {
+	"MMBackgroundPanel"
+	{
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-19"
+		"wide"			"f0"
+		"tall"			"f0"
+		}	
 	"character_info"		// drawn over main menu
 	{
 		ControlName				EditablePanel
@@ -37,7 +46,7 @@
 		"wide""25"
 			"tall""o1"
 		"border_default"				"B_CIcons1"
-		"border_armed"					"B_BArmed"	
+		"border_armed"					"GrayDialogBorder"	
 	}		
 	"BackButtonQKey"
 	{
@@ -136,7 +145,7 @@
 		ControlName				CNotificationsPresentPanel
 		fieldName				"NotificationsPresentPanel"
 		xPos					0
-		yPos					70
+		yPos					50
 		zPos					10000
 		wide					f0
 		tall					30

@@ -187,20 +187,7 @@
 	}	
 	"SetupBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SetupBG"
-		"xpos"			"216"	[$WIN32]
-		"xpos"			"11"	[$X360]
-		"ypos"			"31"
-		//"ypos_hidef"	"-100"	//off-screen
-		//"ypos_lodef"	"-100"	//off-screen
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"0"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
+		"ypos"			"r0"
 	}
 	"ServerTimeLimitLabel"
 	{
@@ -223,19 +210,6 @@
 	}	
 	"ServerTimeLimitLabelBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"ServerTimeLimitLabelBG"
-		"xpos"			"216"	[$WIN32]
-		"xpos"			"11"	[$X360]
-		"ypos"			"31"
-		//"ypos_hidef"	"-100"	//off-screen
-		//"ypos_lodef"	"-100"	//off-screen
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"0"
-		"visible"		"0"
-		//"enabled"		"1"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
+		"ypos"			"r0"
 	}
 }

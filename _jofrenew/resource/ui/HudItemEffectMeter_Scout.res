@@ -3,13 +3,9 @@
 
 "Resource/UI/HudItemEffectMeter_scout.res"
 {
-	"ItemMeterDescription"
-	{
-		"fieldName"	"ScoutSecondary"
-	}
 	HudItemEffectMeter
 	{
 		"ypos"		"r140"
-		"ypos_minmode"	"r120"
-	}
+		"ypos_minmode"	"r115"
+	}	
 }

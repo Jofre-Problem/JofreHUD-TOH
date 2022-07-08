@@ -1,18 +1,17 @@
+#base "../uni_base/image/1.res"
 "Resource/UI/HudMenuTauntSelection.res"
 {
-	"WheelImage"
+	"1_image"
 	{
-		ControlName				ImagePanel
-		fieldName				"WheelImage"
+		
 		xpos					cs-0.5
 		ypos					cs-0.5
-		zpos					5
 		wide					o1
 		tall					300
 
 		image					"replay/thumbnails/hud/SelectionWheel9"
-		scaleImage				1
-		drawcolor				"32 32 32 100"
+		
+		drawcolor				"32 32 32 120"
 	}
 	"MainBackground"	
 	{

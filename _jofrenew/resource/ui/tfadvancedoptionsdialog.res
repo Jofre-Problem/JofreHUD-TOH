@@ -1,143 +1,172 @@
-"Resource\UI\TFAdvancedOptionsDialog.res"
+#base "../ui2/multiple-bg.res"
+#base "../ui3/tank_gif.res"
+"Resource/UI/ItemPickupPanel.res"
 {
-	"TitleLabel"
-	{		
-		"wide"			"0"	}	
-	"CancelButton"
-	{		"wide"			"0"	}	
-	"OkButton"
-	{		"wide"			"0"	}		
-	"CloseShortcut"		// keyboard shortcut
+	"tank_gif"
 	{
-		ControlName			CExButton
-		fieldName			"CloseShortcut"
-		wide				0
-		labelText			"&Q"
-		Command			"close"
-	}
-
-	"CancelButton2"
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"CancelButton2"
-		"xpos"			"0"
-		"ypos"			"rs1"
-		"zpos"			"1"
-		"wide"			"p0.5"
-		"tall"			"13"
-		
-		//"pinCorner"			"3"
-		//"visible"		"1"
-		"defaultBgColor_override"	"Tandarker"
-		"paintbackground"	"1"
-		"labelText"		"n"
-		"font"			"NewIcons12"
-		"textAlignment"	"center"
-		////"dulltext"		"0"
-		//"brighttext"	"0"
-		//"Default"		"1"
-		"Command"		"Close"
-		"sound_depressed"	"sound_menu/button.wav"
-		"sound_released"	"sound_menu/button2.wav"
-	}
-	"OkButton2"
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"OkButton2"
-		"xpos"			"rs1"
-		"ypos"			"rs1"
-		"zpos"			"1"
-		"wide"			"p0.5"
-		"tall"			"13"
-		
-		//"pinCorner"			"3"
-		//"visible"		"1"
-		
-		
-		"labelText"		"y"
-		"font"			"NewIcons12"
-		"textAlignment"	"center"
-		////"dulltext"		"0"
-		//"brighttext"	"0"
-		//"Default"		"1"
-		"Command"		"Ok"
-		"sound_depressed"	"sound_menu/button.wav"
-		"sound_released"	"sound_menu/button2.wav"
-		"defaultBgColor_override"	"Tandarker"
+		"xpos"			"15"
+		"ypos"			"10"
+        "wide"          "35"
 	}	
-	"TFAdvancedOptionsDialog"
+	"MMBackgroundPanel"
 	{
-		"ControlName"								"EditablePanel"
-		"fieldName"									"TFAdvancedOptionsDialog"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"1001"
-		"wide"										"f0"
-		"tall"										"f0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"tabPosition"								"0"
-		"settitlebarvisible"						""
-		"PaintBackgroundType"						"0"
-		"paintbackground"							"1"
-		"bgcolor_override"							"0 0 0 0"
-		"border"									"noborder"
-		
-		"control_w"									"500"
-		"control_h"									"25"
-		"slider_w"									"500"
-		"slider_h"									"25"
-	}
-	"PanelListPanel"
-	{
-		"xpos"		"cs-0.5"
-		"ypos"		"41"
-		"zpos"		"20"
-		"wide"		"480"
-		"tall"		"390"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		//"enabled"		"1"
-		"tabPosition"		"0"
-		"bgcolor_override"	"PolyIconsBg1"
-		"border"		"Rice1"
-	}
-	
-	"TooltipPanel"
-	{
-		"ControlName"								"EditablePanel"
-		"fieldName"									"TooltipPanel"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"100"
-		"wide"										"290"
-		"tall"										"50"
-		"visible"									"0"
-		"PaintBackgroundType"						"0"
-		"paintbackground"							"0"
-		"border"									"OutlinedGreyBox"
-		
-		"TipLabel"
-		{
-			"ControlName"							"CExLabel"
-			"fieldName"								"TipLabel"
-			"font"									"Code7"
-			"labelText"								"%tiptext%"
-			"textAlignment"							"center"
-			"xpos"									"20"
-			"ypos"									"10"
-			"zpos"									"2"
-			"wide"									"250"
-			"tall"									"30"
-			"autoResize"							"0"
-			"pinCorner"								"0"
-			"visible"								"1"
-			"enabled"								"1"
-			"fgcolor_override"						"W_ColorIcons1"
-			"wrap"									"1"
-			//"centerwrap"							"1"
-		}
-	}
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"3000"
+		"wide"			"f0"
+		"tall"			"2"
+	}	
+"TFAdvancedOptionsDialog"
+{
+"ControlName""EditablePanel"
+"fieldName""TFAdvancedOptionsDialog"
+"xpos""c-250"
+"ypos""95"
+"wide""500"
+"tall""350"
+
+
+//"visible""1"
+
+
+"bgcolor_override""TanDarker"
+"paintbackgroundtype""2"
+"settitlebarvisible"""
+"paintborder""1"
+"paintbackground""0"
+"border""Rice1"
+"bgcolor_override"	"34 34 34 0"
+"control_w""500"
+"control_h""25"
+"slider_w""500"
+"slider_h""25"
+}
+"bg"
+{
+"ControlName""EditablePanel"
+"fieldName""bg"
+
+
+"zpos""-100"
+"wide""f0"
+"tall""f0"
+"bgcolor_override"	"50 50 50 255"
+}
+"TitleLabel"
+{
+"ControlName""CExLabel"
+"fieldName""TitleLabel"
+"font""Noto20"
+"labelText""#TF_AdvancedOptions"
+"textAlignment""center"
+
+
+"zpos""1"
+"wide""500"
+"tall""40"
+
+
+//"visible""1"
+
+"fgcolor_override" "LightRed"
+}
+"CancelButton"
+{
+"ControlName""CExButton"
+"fieldName""CancelButton"
+"xpos""150"
+"ypos""310"
+"zpos""1"
+"wide""100"
+"tall""25"
+
+//"pinCorner""3"
+//"visible""1"
+
+
+"labelText""#Cancel"
+"font""HudFontSmall"
+"textAlignment""center"
+////"dulltext""0"
+//"brighttext""0"
+//"Default""1"
+"Command""Close"
+//"sound_depressed""UI/buttonclick.wav"
+//"sound_released""UI/buttonclickrelease.wav"
+}
+"OkButton"
+{
+"ControlName""CExButton"
+"fieldName""OkButton"
+"xpos""300"
+"ypos""310"
+"zpos""1"
+"wide""100"
+"tall""25"
+
+//"pinCorner""3"
+//"visible""1"
+
+
+"labelText""#GameUI_Ok"
+"font""HudFontSmall"
+"textAlignment""center"
+////"dulltext""0"
+//"brighttext""0"
+//"Default""1"
+"Command""Ok"
+//"sound_depressed""UI/buttonclick.wav"
+//"sound_released""UI/buttonclickrelease.wav"
+}
+
+"PanelListPanel"
+{
+"ControlName""CPanelListPanel"
+"fieldName""PanelListPanel"
+"xpos""10"
+"ypos""40"
+"wide""480"
+"tall""260"
+
+
+//"visible""1"
+
+
+"bgcolor_override""Blank"
+}
+
+"TooltipPanel"
+{
+"ControlName""EditablePanel"
+"fieldName""TooltipPanel"
+
+
+"zpos""100"
+"wide""240"
+"tall""50"
+"visible""0"
+"PaintBackgroundType""2"
+"border""MainMenuBGBorder"
+
+"TipLabel"
+{
+"ControlName""CExLabel"
+"fieldName""TipLabel"
+"font""HudFontSmallest"
+"labelText""%tiptext%"
+"textAlignment""center"
+"xpos""20"
+"ypos""10"
+"zpos""2"
+"wide""200"
+"tall""30"
+
+
+//"visible""1"
+
+"fgcolor_override""TanLight"
+"wrap""1"
+//"centerwrap""1"
+}
+}
 }

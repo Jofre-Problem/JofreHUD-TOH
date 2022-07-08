@@ -1,78 +1,90 @@
+// Main menu Steam friends list entries
+// I've set dimensions so height is 1.24 times width
+// Avatar is square so the .24 is for a name tag
+
 "Resource/UI/SteamFriendPanel.res"
 {	
-	"avatar"
+	"avatar"						// profile pic
 	{
-		"fieldName"	"avatar"
-		"xpos"		"rs1-4"
-		"ypos"		"1"
-		"wide"		"o1"
-		"tall"		"f2"
-		"proportionaltoparent"	"1"
-		"mouseinputenabled"		"0"
-		"scaleImage"	"1"
+		fieldName					"avatar"
+		xpos							0
+		ypos							0
+		zpos							3
+		wide							f0
+		tall							o1		// match width
+		proportionaltoparent		1
+		scaleImage					1
 	}
+
 
 	"InteractButton"
 	{
-		"fieldName"	"InteractButton"
-		"xpos"		"0"
-		"ypos"		"0"
-		"zpos"		"-1"
-		"wide"		"f0"
-		"tall"		"f0"
-		"proportionaltoparent"	"1"
-		"command"	"open_menu"
-		"labelText"	""
-		"textalignment"	"center"
-		"stay_armed_on_click"	"1"
-		//"RoundedCorners"	"0"
-		"paintbackground"	"1"
+		fieldName					"InteractButton"
+		xpos							0
+		ypos							0
+		zpos							4
+		wide							f0
+		tall							f0
+		proportionaltoparent		1
 
-		"defaultBgColor_override"	"Blank"
-		"armedBgColor_override"	"64 64 64 45"
+		command						"open_menu"
 
-		"border_default"	"NoBorder"
-		"border_armed"		"FriendHighlightBorder"
+		labeltext					""
+		stay_armed_on_click		1
+		roundedcorners				0
+
+		paintbackground				1
+		defaultBgColor_override		"0 0 0 30"		// dimmer unless in focus
+		armedBgColor_override		"0 0 0 0"
 	}
 
-	"NameLabel"
+
+	"NameLabel"					// profile name/nickname if set
 	{
-		"ControlName"			"Label"
-		"fieldName"				"NameLabel"
-		"xpos"					"rs1-24"
-		"ypos"					"0"
-		"zpos"					"100"
-		"wide"					"f22"
-		"tall"					"10"
-		"textAlignment"			"north-east"
-		"visible"				"1"
-		"enabled"				"1"
-		"proportionaltoparent"	"1"
-		"wrap"					"0"
-		"labelText"				"%name%"
-		"proportionaltoparent"	"1"
-		"font"					"CustomPrimero"
-		"mouseinputenabled"		"0"
-		"fgcolor_override"		"W_ColorIcons1"	
+		ControlName					Label
+		fieldName					"NameLabel"
+		xpos							0
+		ypos							0
+		zpos							3
+		wide							0
+		tall							o0.24
+		proportionaltoparent		1
+		visible						1
+		enabled						1
+
+		font							"Code7"
+		labelText					"%name%"
+		textAlignment				center
+		wrap							0
+		textInsetX					5				// small padding
+		
+		fgcolor_override			"0 255 0 255"
+		paintbackground			0
+
+		pin_to_sibling 			"avatar"
+		pin_corner_to_sibling 	PIN_TOPLEFT
+		pin_to_sibling_corner 	PIN_BOTTOMLEFT
 	}
+
+
+	// This changes between ingame/online/away (both text and color)
+	// If labelText is not blank it will use that instead, but the color will still change
 
 	"StatusLabel"
 	{
-		"fieldName"				"StatusLabel"
-		"xpos"					"0"
-		"ypos"					"8"
-		"zpos"					"100"
-		"wide"					"f0"
-		"tall"					"10"
-		"textAlignment"			"east"
-		"visible"				"1"
-		"enabled"				"1"
-		"proportionaltoparent"	"1"
-		"wrap"					"1"
-		"labelText"				"%status%"
-		"proportionaltoparent"	"1"
-		"font"					"Code7"
-		"fgcolor_override"				"TanDark"
-		"mouseinputenabled"		"0"
+		fieldName					"StatusLabel"
+		xpos							0
+		ypos							0
+		zpos							200
+		wide							40
+		tall							2
+		proportionaltoparent		1
+		visible						1
+
+		font							"NotoBold40"
+		labelText					"______"		// https://unicode-table.com/en/2588/
+		textAlignment				west
+
+
 	}
 }

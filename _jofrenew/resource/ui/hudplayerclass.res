@@ -1,3 +1,4 @@
+//#base "../../uni_base/panel/1.res"
 //#base "../ui3/blue-light.res"
 "Resource/UI/HudPlayerClass.res"
 {
@@ -15,76 +16,39 @@
 	}
 	"PlayerStatusClassImage"
 	{
-		"ControlName"	"CTFClassImage"
-		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/class_scoutred"
+		"ypos"			"r0"
 	}
 	"PlayerStatusSpyImage"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"PlayerStatusSpyImage"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/class_spyred"
-		"teambg_2"		"../hud/class_spyred"
-		"teambg_3"		"../hud/class_spyblue"			
+		"ypos"			"r0"		
 	}	
+
 	"PlayerStatusSpyOutlineImage"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"PlayerStatusSpyOutlineImage"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/class_spy_outline"
-		"scaleImage"	"1"	
-	}		
+		"ypos"			"r0"
+////	"pin_to_sibling"	"1_editable"
+	}
+
 	"PlayerStatusClassImageBG"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"ypos"			"r0"
 	}
 	"classmodelpanelBG"
-	{		
-		"wide"			"0"
-	}	
+	{	
+		"wide"			"0"//100
+	}
 	"classmodelpanel"
 	{
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"classmodelpanel"
 		
 		"xpos"			"0"
-		"xpos_minmode"	"0"
 		"ypos"			"r200"
-		"ypos_minmode"	"r200"
 		"zpos"			"2"		
 		"wide"			"240"
-		"wide_minmode"	"240"
+	//	"wide_minmode"	"240"
 		"tall"			"200"
-		"tall_minmode"	"200"
+	//	"tall_minmode"	"200"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -234,36 +198,16 @@
 
 		"CarryingBackground"
 		{
-			"ControlName"			"CTFImagePanel"
-			"fieldName"				"CarryingBackground"
-			"xpos"					"0"
-			"ypos"					"0"
-			"zpos"					"0"
-			"wide"					"0"
-			"tall"	 				"0"
-			"image"					"../hud/color_panel_brown"
-			"scaleImage"			"0"
-			"teambg_1"				"../hud/color_panel_brown"
-			"teambg_2"				"../hud/color_panel_red"
-			"teambg_2_lodef"		"../hud/color_panel_red"
-			"teambg_3"				"../hud/color_panel_blu"
-			"teambg_3_lodef"		"../hud/color_panel_blu"
-			"proportionaltoparent"	"0"
-		
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"ypos"			"r0"
 		}
 
 		"CarryingLabel"
 		{	
 			"ControlName"		"CExLabel"
 			"fieldName"			"CarryingLabel"
-			"font"				"Code7"
+			"font"				"Medhealtarget"
 			"xpos"				"5"
-			"ypos"				"13"
+			"ypos"				"15"
 			"zpos"				"1"
 			"wide"				"f0"
 			"tall"	 			"f0"
@@ -279,9 +223,12 @@
 			"labelText"			"%carrying%"
 			"bgcolor"		"64 64 64 255"
 		}
-	"CarryingLabelShadow"
+	"CarryingLabelDropShadow"
 		{	
-			"wide"				"0"
+			"font"				"MedhealtargetBlur"
+			"pin_to_sibling"	"CarryingLabel"
+			"xpos"				"0"
+			"ypos"				"0"
 		}
 		"OwnerLabel"
 		{	

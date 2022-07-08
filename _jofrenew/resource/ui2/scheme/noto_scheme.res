@@ -883,7 +883,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"CallingCode-Regular"
+				"name"		"Calling Code Regular"
 				"tall"		"7"
 				"antialias" 	"1"
 				"outline"     "1"

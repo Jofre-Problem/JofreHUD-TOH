@@ -1,7 +1,10 @@
 
-	#base "../testcheme.res"
-	#base "apple.res"
-#base "clientschemesec.res"	
+	
+	#base "borders.res"
+//	#base "product.res"
+	#base "scheme/hp-ammo/file.res"
+	// replaces scheme-res
+//	#base "apple.res"
 	#base "../font.res"
 	#base "cs_windows.res"
 	#base "base/scheme/cs_global_tf.res"
@@ -13,11 +16,13 @@
 	#base "../!sc/clientscheme.res"
 	#base "clientscheme2.res"
 	#base "clientscheme_unused.res"
+	#base "../testcheme_override.res"
+	#base "../testcheme.res"
 Scheme
 {
 	BaseSettings
 	{
-		Econ.Dialog.BgColor									"Blank"
+		Econ.Dialog.BgColor									"0 0 0 0"
 		Econ.Button.BgColor									"blank"
 		Econ.Button.FgColor									"TanLight"
 		Econ.Button.ArmedBgColor							"blank"
@@ -32,46 +37,38 @@ Scheme
 		Econ.Button.PresetDefaultColorBg					"blank"
 		Econ.Button.PresetArmedColorBg						"blank"
 		Econ.Button.PresetDepressedColorBg					"blank"
-		TextEntry.TextColor			"193 175 75 255"
+		TextEntry.TextColor			"W_ColorIcons1"
 		TextEntry.BgColor			"W_ColorTheme2"
 		TextEntry.DisabledTextColor	"W_ColorIcons1"
 		TextEntry.DisabledBgColor	"W_ColorTheme3"
-		TextEntry.SelectedTextColor	"W_ColorIcons1"
-		TextEntry.SelectedBgColor	"W_ColorTheme1"
+		TextEntry.SelectedTextColor	"W_ColorTheme1"
+		TextEntry.SelectedBgColor	"W_ColorIcons1"
 		TextEntry.OutOfFocusSelectedBgColor	"Blank"
 		TextEntry.FocusEdgeColor	"Blank"	
-		TextEntry.CursorColor		"W_BorderArmed"
+		TextEntry.CursorColor		"W_ColorIcons1"
 		Button.DepressedTextColor		"W_ColorTheme3"
 		Button.DepressedBgColor			"W_ColorTheme1"
-		Button.FocusBorderColor			"W_BorderArmed"
+		Button.FocusBorderColor			"W_ColorTheme1"
 		ProgressBar.BgColor				"W_ColorTheme2"
 		ScrollBarButton.FgColor				"W_ColorIcons1"
 		ScrollBarButton.ArmedFgColor		"W_ColorTheme1"
 		ScrollBarButton.DepressedFgColor	"W_ColorTheme1"
 		Slider.TextColor			"blank"
         Slider.DisabledTextColor2	"Blank"	
-		Econ.Dialog.BgColor				"W_ColorTheme1"
+	//	Econ.Dialog.BgColor				"W_ColorTheme1"
 		ReplayBrowser.BgColor					"W_ColorTheme1"		
 		Replay.RenderDialog.BgColor							"W_ColorTheme1"
 
-		Button.TextColor								"PolyIconsFg1"
-		Button.BgColor									"0 0 0 165"
-		Button.ArmedTextColor							"45 245 245 235"
+		Button.TextColor								"240 240 240 255"
+		Button.BgColor									"27 27 27 255"
+		Button.ArmedTextColor							"240 240 240 255"
 		Button.ArmedBgColor								"255 255 255 16"
-		Button.SelectedTextColor						"45 245 245 235"
-		Button.SelectedBgColor							"255 255 255 16"
+		Button.SelectedTextColor						"255 152 0 255"
+	//  hover button, took me 30 min to find
+		Button.SelectedBgColor							"255 152 0 255"
+	// 	
 		Button.DepressedTextColor						"245 245 245 180"
 		Button.DepressedBgColor							"255 255 255 16"
-
-//		Button.BgColor					"W_ColorTheme1"
-	///	Button.ArmedTextColor			"W_ColorTheme3"
-	//	Button.ArmedBgColor				"W_ColorLinea1"
-// TF		Button.DepressedTextColor		"W_ColorTheme1"
-// tf		Button.DepressedBgColor			"W_BorderArmed"	
-// tf		Button.FocusBorderColor			"W_BorderArmed"
-	//	Button.TextColor									"W_BorderArmed"
-	//	Button.SelectedTextColor						"W_ColorTheme3"
-	//	Button.SelectedBgColor							"W_BorderArmedText" // selected, only specific buttons
 
 		CheckButton.TextColor								"W_ColorTheme1"
 		CheckButton.SelectedTextColor						"W_ColorIcons1"
@@ -123,13 +120,13 @@ Scheme
 //		ScrollBarButton.DepressedFgColor	"W_ColorTheme1"
 		ScrollBarButton.DepressedBgColor	"Blank"
 
-		ScrollBarSlider.FgColor								"W_ColorLinea1"
-		ScrollBarSlider.BgColor								"Blank"
+		ScrollBarSlider.FgColor								"35 255 0 255"//w_coloricons1
+		ScrollBarSlider.BgColor								"blank"
 
 
 	//	Slider.NobColor										"W_ColorIcons1"
 		Slider.TextColor									"127 140 127 255"
-	//	Slider.TrackColor									"W_BorderArmed"
+
 		Slider.DisabledTextColor1							"117 117 117 255"
 	//	Slider.DisabledTextColor2							"Blank"
 
@@ -158,9 +155,10 @@ Scheme
 	}
 	Colors
 	{	
+		"TransparentLightBlack""0 0 0 100"
 	//	"Green"					"0 135 68 255"
 	//	"TanLight"				"193 175 75 255"			
-
+	"TFOrange"			"255 255 255 200"
 		"White"									"235 235 235 255"
 		"WhiteSolid"							"255 255 255 255"
 		"WhiteTransparent"						"235 235 235 180"
@@ -288,46 +286,57 @@ Scheme
 	}	
 	Fonts
 	{
+		"blocks"
+		{
+			"1"
+			{
+				"name"		"blocks blocks"
+				"tall"		"200"
+				"antialias" "1"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}		
 		"Default"
 		{
 			"1"
 			{
-				"name"		"Open Sans Bold"
+				"name"		"Product Sans"
 				"tall"		"12"
 				"antialias"	"1"
 
 			}
 			"2"
 			{
-				"name"	"Open Sans Bold"
+				"name"	"Product Sans"
 				"tall"		"13"		"antialias"	"1"
 			}
 			"3"
 			{
-				"name"		"Open Sans Bold"
+				"name"		"Product Sans"
 				"tall"		"14"
 				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"	"Open Sans Bold"
+				"name""Product Sans"
 				"tall"		"20"
 				"antialias"	"1"
 			}
 			"5"
 			{
-				"name"	"Open Sans Bold"
+				"name"	"Product Sans"
 				"tall"		"24"
 				"antialias"	"1"
 			}
 			"6"
 			{
-				"name""Open Sans Bold"
+				"name""Product Sans"
 				"tall"		"12"		"antialias"	"1"
 			}
 			"7"
 			{
-				"name"		"Open Sans Bold"
+				"name"		"Product Sans"
 				"tall"		"12"		"antialias"	"1"
 			}
 
@@ -337,7 +346,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Iosevka Term SS14"
+				"name"		"Product Sans"
 				"tall"		"6"
 			}
 		}		
@@ -345,7 +354,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Iosevka Term SS14"
+				"name"		"Product Sans"
 				"tall"		"7"
 				"wide"		"300"
 				"antialias" 	"1"
@@ -355,7 +364,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Iosevka Term SS14"
+				"name"		"Product Sans"
 				"tall"		"10"
 				"wide"		"300"
 				"antialias" 	"1"
@@ -365,7 +374,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Iosevka Term SS14"
+				"name"		"Product Sans"
 				"tall"		"14"
 				"wide"		"300"
 				"antialias" 	"1"
@@ -467,7 +476,7 @@ Scheme
 			"1"
 			{
 				"tall"		"16"
-				"weight"	"250"
+				"weight"	"900"
 				"antialias" "1"
 				"additive"	"1"
 			}
@@ -494,27 +503,40 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"CallingCode-Regular"
+				"name"		"Calling Code Regular"
 				"tall"		"9"
 				"wide"		"300"
 				"antialias" 	"1"
+				"outline"	"1"
 			}
 		}   			
 		"Code7"
 		{
 			"1"
 			{
-				"name"		"CallingCode-Regular"
+				"name"		"Calling Code Regular"
 				"tall"		"7"
 				"wide"		"300"
+				"outline"	"1"
 				"antialias" 	"1"
 			}
 		}    		
+		"Code8"
+		{
+			"1"
+			{
+				"name"		"Calling Code Regular"
+				"tall"		"8"
+				"wide"		"300"
+				"outline"	"1"
+				"antialias" 	"1"
+			}
+		}				
 		"Blank" //backup
 		{
 			"1"
 			{
-				"name"			"Segoe UI"
+				"name"			"Blank"
 				"tall"			"1"
 				"weight"		"100"
 				"additive"		"0"
@@ -522,6 +544,7 @@ Scheme
 				"yres"			"0 2000"
 			}
 		}
+	
 		"Segoe8"
 		{
 			"1"
@@ -572,6 +595,16 @@ Scheme
 				"wide"		"300"
 			}
 		}	
+		"Future40"
+		{
+			"1"
+			{
+				"name"		"Future Rot"
+				"tall"		"40"
+				"antialias" 	"1"
+				"wide"		"300"
+			}
+		}			
 		"Future30"
 		{
 			"1"
@@ -591,27 +624,7 @@ Scheme
 				"antialias" 	"1"
 				"wide"		"300"
 			}
-		}
-		"huh14"
-		{
-			"1"
-			{
-				"name"		"Boring Lesson"
-				"tall"		"14"
-				"antialias" 	"1"
-				
-			}
-		}	
-		"huh18"
-		{
-			"1"
-			{
-				"name"		"BIGARIAL UltraBold"
-				"tall"		"18"
-				"antialias" 	"1"
-				
-			}
-		}															
+		}														
 		"Future14"
 		{
 			"1"
@@ -646,7 +659,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+			
 				"tall"		"18"
 				"weight"	"500"
 				"Antialias" "1"
@@ -657,7 +670,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				
 				"tall"		"20"
 				//"tall_hidef"	"20"
 				"Antialias" "1"
@@ -668,7 +681,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+			
 				"tall"		"50"
 				"weight"	"500"
 				"Antialias" "1"
@@ -676,7 +689,71 @@ Scheme
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 			}
 		}	
-		
+		"Class30"
+		{
+			"1"
+			{
+				"name"		"Hudas Iscariote"
+				"tall"		"30"
+				"additive"  "0"
+				"antialias"	"1"
+			}
+		}		
+"Journal20"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""20"
+"antialias""1"
+}
+}
+"Journal25"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""25"
+"antialias""1"
+}
+}
+"Journal30"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""30"
+"antialias""1"
+}
+}
+"Journal38"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""38"
+"antialias""1"
+}
+}
+"Journal42"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""42"
+"antialias""1"
+}
+}
+"Journal30_Blur"
+{
+"1"
+{
+"name""Journal-jofreproblem_fix1"
+"tall""30"
+"antialias""1"
+"blur"	"2"
+}
+}			
 	}
 	Borders
 	{		
@@ -736,7 +813,7 @@ Scheme
 		{
 			"inset" 			"0 0 0 0"
 			"backgroundtype"	"0"
-		}		
+		}			
 		Rice1
 		{
 			"inset" "0 0 1 1"
@@ -1087,7 +1164,20 @@ Scheme
 			"src_corner_width"		"24"
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"
-		}						
+		}	
+		B_Theme1
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			"color" "W_ColorTheme1"   //
+			"offset" "0 0"
+			
+			"image"					"replay/thumbnails/panels/material_generic"
+			"src_corner_height"		"24"				// pixels inside the image
+			"src_corner_width"		"24"
+			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"11"
+		}								
 		B_BArmed
 		{
 			"bordertype"			"scalable_image"
@@ -1190,15 +1280,32 @@ Scheme
 		//	"color"					"Blank"
 		//	"image"					"replay/thumbnails/null"
 		}
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+		
 	}
 
 	CustomFontFiles
 	{
-	//	"91"
-	//	{
-	//		"font" "_jofrenew/font/Product Sans.ttf"
-	//		"name" "Product Sans"
-	//	}
+		"91"
+		{
+			"font" "_jofrenew/font/Product Sans.ttf"
+			"name" "Product Sans"
+		}
 	
 		"94"
 		{
@@ -1210,12 +1317,7 @@ Scheme
 		{
 			"font" "_jofrenew/font/FutureRotfix.otf"
 			"name" "Future Rot"
-		}			
-		"97"
-		{
-			"font" "_jofrenew/font/iosevka-term-ss14-regular.ttf"
-			"name" "Iosevka Term SS14"
-		}			
+		}					
 		"98"
 		{
 			"font" "_jofrenew/font/JofreIconsMaster.otf"
@@ -1224,7 +1326,7 @@ Scheme
 		"99"
 		{
 			"font" "_jofrenew/font/CallingCode-Regular.otf"
-			"name" "Calling Code"
+			"name" "Calling Code Regular"
 		} 
 	//	"100"
 	//	{
@@ -1240,16 +1342,16 @@ Scheme
 		{
 			"font" "_jofrenew/font/JotSpInvertedRegular-ZBem.ttf"
 			"name" "Jot Sp Inverted Regular"
-		}	
-		"103"
+		}			
+		"104" 
 		{
-			"font" "_jofrenew/font/BoringLesson.ttf"
-			"name" "Boring Lesson"
-		}
-		"104"
+			"font" "_jofrenew/font/HudasIscariote2.otf"
+			"name" "Hudas Iscariote"
+		}			
+		"105"
 		{
-			"font" "_jofrenew/font/BIGARIAL.ttf"
-			"name" "BIGARIAL UltraBold"
-		}									   		     		
+			"font" "_jofrenew/fonts/Blocks-Blocks.ttf"
+			"name" "blocks"
+		}						   		     		
 	}	
 }
